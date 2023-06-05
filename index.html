@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>隨機選擇台灣縣市</title>
+        <style>
+            body{
+                margin-left: 0px;
+                margin-right: 0px;
+                background-image:url(bgg.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;  
+                background-size: cover;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);              
+                justify-content: center;
+                align-items: center;
+                grid-gap: 10px;
+                width: 300px;  
+                height: 300px; 
+                margin-left: auto;
+                margin-right: auto;
+            }
+            A:link {text-decoration:none}
+            A:visited {text-decoration:none}
+            A:active {text-decoration:none}
+            A:hover {text-decoration:underline;color:red;}
+
+            .top{
+            font-size:20px;
+            font-family:微軟正黑體;
+            letter-spacing:10px;
+            color:#ffffff;
+            font-weight:bolder;}
+            .footer{
+            font-family:微軟正黑體;color:white;
+            text-align:center;
+            }
+            .grid-item {
+                width: 100%;
+                height: 0;
+                padding-bottom: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .item1 {
+                background-image: url('image1.jpg');
+            }
+
+            .item2 {
+                background-image: url('image2.jpg');
+            }
+
+            .item3 {
+                background-image: url('image3.jpg');
+            }
+
+            .item4 {
+                background-image: url('image4.jpg');
+            }
+
+            .item5 {
+                background-image: url('image5.jpg');
+            }
+
+            .item6 {
+                background-image: url('image6.jpg');
+            }
+
+            .item7 {
+                background-image: url('image7.jpg');
+            }
+
+            .item8 {
+                background-image: url('image8.jpg');
+            }
+
+            .item9 {
+                background-image: url('image9.jpg');
+            }
+            .title{
+                font-family:微軟正黑體;font-size:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <div class="title">出遊選擇小幫手</div>
+        <hr>
+        <a href="index.html" target="_top" class="top">主頁</a>　　
+        <a href="page2.html" target="_top" class="top">意見回饋單</a>　　
+        <a href="page3.html" target="_top" class="top">台灣地圖</a>　　　
+
+        <table align="center" bgcolor="white"  width="55%"><tr><td>
+        <br>
+
+        <hr width="600px" align="left" size="2px" color="black"><br>
+        <div class="grid-container">
+            <div class="grid-item item1"></div>
+            <div class="grid-item item2"></div>
+            <div class="grid-item item3"></div>
+            <div class="grid-item item4"></div>
+            <div class="grid-item item5"></div>
+            <div class="grid-item item6"></div>
+            <div class="grid-item item7"></div>
+            <div class="grid-item item8"></div>
+            <div class="grid-item item9"></div>
+        </div>
+        <button id="randomize" >城市</button>
+        <p id="city"></p>
+        <button id="randomizeArea"  style="display: none;">餐廳</button>
+        <p id="area"></p>
+        <p id="areaDescription"></p>
+        <img id="areaImage" style="display: none;">
+        
+    </center>
+
+        <script src="main.js"></script>
+    </body>
+</html>
+
