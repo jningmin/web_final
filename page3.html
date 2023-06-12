@@ -46,6 +46,7 @@ font-family:微軟正黑體;font-size:30px;
 font-family:impact;font-size:60px;color:yellow;text-align:center;
 }
 </style>
+<link rel="stylesheet" href="">
 </head>
 <body>
 <div class="title3">出遊選擇小幫手</div>
@@ -56,12 +57,22 @@ font-family:impact;font-size:60px;color:yellow;text-align:center;
 <a href="page3.html" target="_top" class="top">台灣地圖</a>　　
 </center><br>
 <br>
-<table align="center" bgcolor="white"  width="55%"><tr><td>
-<br>
-<left>
-<div class="title">&nbsp台灣地圖</div>
-</left>
-<hr width="600px" align="left" size="5px" color="black">
-<div>
-<img src="map.jpg" alt="map" width="500" height="700">
-</body></html>
+<table align="center" bgcolor="white"  width="55%">
+    <tr><td><br>
+        <div class="title">&nbsp台灣地圖</div>
+        <hr width="600px" align="left" size="5px" color="black">
+        <div id="container" style="display: flex; justify-content: space-between;">
+            <img src="map.jpg" alt="map" width="500" height="700">
+            <div id="selections">
+                <select id="citySelect"></select><br>
+                <div id="result"></div>
+            </div>
+        </div>
+       
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="weather.js"></script>
+        
+    </td></tr>
+</table>
+</body>
+</html>

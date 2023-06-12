@@ -85,6 +85,7 @@
                 font-family:微軟正黑體;font-size:50px;
             }
         </style>
+        <link rel="stylesheet" href="">
     </head>
     <body>
         <center>
@@ -109,16 +110,23 @@
             <div class="grid-item item8"></div>
             <div class="grid-item item9"></div>
         </div>
-        <button id="randomize" >城市</button>
+        <button id="randomize">城市</button>
         <p id="city"></p>
-        <button id="randomizeArea"  style="display: none;">餐廳</button>
+        <button id="randomizeArea" style="display: none;">餐廳</button>
         <p id="area"></p>
         <p id="areaDescription"></p>
         <img id="areaImage" style="display: none;">
+        <p>Get a joke :<br>
+            <pre id="showData"></pre>
+        </p>
+        <button id = "joke">Make me laught</button>
+
         
     </center>
-
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="main.js"></script>
+        <script src="weather.js"></script>
+        <script src="joke.js"></script>
     </body>
 </html>
 

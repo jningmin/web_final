@@ -46,3 +46,4 @@ document.getElementById('randomizeArea').addEventListener('click', function() {
     document.getElementById('areaImage').style.display = "block";
     document.getElementById('areaDescription').innerText = randomArea.description;
 });
+
